@@ -1,2 +1,2 @@
 # atp5
-ickem.github.io/atp5/
+http://ickem.github.io/atp5/
