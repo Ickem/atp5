@@ -1,0 +1,358 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+	background-image: url(../images/bg.jpg);
+	background-attachment: fixed;
+}
+.wrapper {
+	min-width: 1000px;
+	max-width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+ @font-face {
+    font-family: a_BodoniNova; /* Имя шрифта */
+    src: url(../fonts/BODONI_3.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 240px;
+}
+
+.header img{
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+
+.company{
+	padding: 50px 0 0 250px;
+	font: 24px 'Verdana, Tahoma', sans-serif;
+	text-shadow: 10px 10px 13px gray; 
+	font-weight: bold;
+}
+
+.header p{
+	padding: 30px 0 0 250px;
+	font: 15px 'Verdana, Tahoma', serif;
+	font-weight: bold;
+	color: gray;
+}
+
+.main-menu {
+	margin: 0px auto; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.3);
+	position: relative;
+    background: #FF6700	; 
+	margin-top:20px;
+	padding: 10px;
+	text-align: center;
+}
+
+.main-menu li{
+    display:inline-block; 
+    text-align: center; 
+}
+
+.main-menu li a {
+	display: block;
+    padding: 5px 15px;
+    color: #fff;
+	font-size:150%;
+    text-decoration: none;
+    margin-left : 5px;
+}
+
+.main-menu a:hover {
+	color: #000	;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 100px;
+	position: relative;
+	 
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 270px 0 0;
+}
+
+.content-services{
+	font-size: 16px;
+}
+.maz-cert{
+	width: 280px;
+	border: 3px solid #000;
+	display: block; 
+	margin: 0 auto;
+}
+.maz-logo{
+	float: right;
+	padding-left: 15px;
+}
+ul{
+   list-style-type: circle; 
+   margin-left: 20px;
+   font-size: 16px;
+}
+.content h1, .content-services h1, .content-maz h1 {
+	margin-top: 15px;
+	text-align:center;
+	font: 20px a_BodoniNova ;
+	font-weight: bold;
+	color: #000;
+}
+.content-services h1{
+	font-size: 16px;
+	padding-bottom:10px;
+}
+.content p, .content-maz p{
+	text-indent: 20px;
+	font-size: 16px;
+	text-align:justify;
+}
+.first-paragraph{
+	margin-top: 15px;
+}
+
+.ssdisplay > .ssimages{
+	position:relative;
+	font-size:0px;
+	transition:left 0.5s;
+}
+.ssdisplay{
+	overflow:hidden;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+.hovergallery{
+	margin: 10px 0 0 15px;	
+}
+.hovergallery-store {
+	text-align: center;	
+}
+.hovergallery-maz img{
+	float: left;	
+	padding: 0;
+}
+.hovergallery img, .hovergallery-store img, .hovergallery-maz img{
+	-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+	-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+	-o-transform:scale(0.8); /*Opera: масштабирование*/
+	-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+	-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+	-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+	opacity: 0.7; /*Начальная прозрачность изображений*/
+	margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+	width: 32%;
+}
+.hovergallery img:hover, .hovergallery-store img:hover, .hovergallery-maz img:hover{
+	-webkit-transform:scale(1.05); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.05); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.05); /*Opera: масштабирование*/
+	box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+	-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+	-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+	opacity: 1;
+}
+.content-maz a{
+	text-decoration: none;
+}
+.content-maz a:hover{
+	text-decoration: underline;
+	margin-left: 15px;
+}
+.link img{
+	float: left;
+	width: 15px;
+}
+.content-contacts{
+		font-size:16px;
+}
+p.employee-position{
+	font-weight: bold;
+	font-size: 16px;
+	
+}
+table{
+	width: 100%;
+	margin-left: 25px;
+}
+td{
+	padding:20px 0;
+}
+.content-contacts h1{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar {
+	float: left;
+	width: 250px;
+	height: 200px;
+	margin-top:270px;
+	margin-left: -250px;
+	position: relative;
+	background: #f8f8f8;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.3);
+}
+.contacts{
+	margin-top: 70px;
+	padding-bottom:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.3);
+}
+.ribbon {
+	text-align:center;
+	background: #FF6700;
+    height: 30px;
+    width: 280px;
+    position: relative;
+    left:-15px;
+    top: 10px;
+    float: left;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
+     z-index: 100; /* показываем над всеми элементами */
+}
+.ribbon h1{
+	margin-top: 5px;
+	font: 20px a_BodoniNova ;
+	font-weight: bold;
+	color: #fff;
+}
+.ribbon-l { /* уголочек под зголовком слева */
+    border-color: transparent #7d90a3 transparent transparent;
+    border-style:solid;
+    border-width:15px;
+    height:0px;
+    width:0px;
+    position: relative;
+    left: -30px;
+    top: 25px;
+    z-index: -1; /* спрячем под основной блок */
+}
+
+.ribbon-r { /* уголочек под зголовком справа */
+    border-color: transparent transparent transparent #7d90a3;
+    border-style:solid;
+    border-width:15px;
+    height:0px;
+    width:0px;
+    position: relative;
+    left: 250px;
+    top: -5px;
+    z-index: -1; /* спрячем под основной блок */
+}
+.right-sidebar p{
+	padding: 0 15px 5px 15px;
+	text-align: left;
+	font: 15px Arial, sans-serif;
+	color: #000;
+}
+strong { 
+	font-weight: bold;
+ }
+em{
+	font-style: italic;
+}
+ 
+.__zaprosWidget{
+	margin: 5px 60px;
+}
+ 
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -50px auto 0;
+	min-width: 1000px;
+	max-width: 1000px;
+	height:50px;
+	background: #373737;
+	position: relative;
+}
+
+.copyright{
+	color:#fff;
+	text-align:center;
+}
